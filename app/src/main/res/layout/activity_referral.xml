@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_referral"
+    tools:context="com.ascentsmartwaves.andnrbyrevamp.activities.ReferralActivity">
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/ten_dp"
+        android:id="@+id/relativeLayout">
+
+        <com.ascentsmartwaves.andnrbyrevamp.custom.CustomEditText
+            android:id="@+id/user_referral_email_id"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint="Referral Id"/>
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btn_submit_referral"
+            android:layout_below="@+id/user_referral_email_id"
+            android:textSize="@dimen/eighteen_dp"
+            android:textColor="@color/white"
+            android:background="@color/app_color"
+            android:layout_margin="@dimen/ten_dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:id="@+id/btn_skip_referral"
+            android:layout_below="@+id/btn_submit_referral"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/eighteen_dp"
+            android:textColor="@color/white"
+           android:layout_margin="@dimen/ten_dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

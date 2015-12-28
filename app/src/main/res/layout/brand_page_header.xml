@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="@dimen/ten_dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten_dp">
+
+        <ImageView
+            android:id="@+id/brand_logo_imageview_brand_page"
+            android:layout_below="@+id/brand_name_textview_brand_page"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_width="@dimen/fifty_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+            android:id="@+id/brand_name_textview_brand_page"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/twenty_five_sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/follow_icon_brand_page"
+            android:layout_below="@+id/brand_name_textview_brand_page"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/five_dp"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/show_icons_brand"
+        android:layout_below="@+id/header_layout"
+        layout="@layout/include_call_email_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/counter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_icons_brand"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/ten_dp"
+        >
+
+        <include
+            layout="@layout/show_counters_followers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <include
+            layout="@layout/show_counters_deals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/five_dp"
+            />
+        <include
+            layout="@layout/show_counters_likes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/five_dp"
+            />
+        <include
+            layout="@layout/show_counters_redeems"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/five_dp"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/article_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/counter"
+        android:layout_margin="@dimen/ten_dp">
+
+        <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+            android:id="@+id/article_textview_brand_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/material_blue_grey_800"
+            android:textSize="@dimen/fifteen_dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

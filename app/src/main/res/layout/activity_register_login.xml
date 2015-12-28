@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".RegisterLogin" android:background="@drawable/background_register">
+
+
+
+    <RelativeLayout
+        android:id="@+id/socialbuttonsLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/six_dp"
+        android:layout_marginRight="@dimen/six_dp"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:layout_marginBottom="@dimen/ten_dp"
+        >
+
+        <include
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_four_dp"
+            android:layout_marginLeft="@dimen/six_dp"
+            android:layout_marginRight="@dimen/six_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginBottom="@dimen/five_dp"
+            layout="@layout/include_facebook_button"
+            />
+
+
+
+       <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_btn_sign_in_login_or_register_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_four_dp"
+            android:layout_marginLeft="@dimen/three_dp"
+            android:layout_marginRight="@dimen/three_dp"
+            android:layout_below="@id/FrameLayout1"
+           />
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:id="@+id/dealscounter_counter_deals"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/thirty_sp"
+        android:textStyle="bold"
+        android:textColor="@color/material_blue_grey_800"
+        android:gravity="center"
+        android:background="@color/white"
+        />
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Deals"
+        android:textColor="@color/material_blue_grey_800"
+        android:textSize="@dimen/fifteen_sp"
+        android:gravity="center"
+        />
+
+
+
+</LinearLayout>

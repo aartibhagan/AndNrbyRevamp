@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_setting"
+    >
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="T&amp;C"
+        android:padding="@dimen/fifteen_dp"
+        android:textStyle="bold"
+        android:id="@+id/terms"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_two_dp"
+        />
+
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy"
+        android:padding="@dimen/fifteen_dp"
+        android:textStyle="bold"
+        android:id="@+id/privacy"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_two_dp"
+        />
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/aboutus"
+        android:padding="@dimen/fifteen_dp"
+        android:textSize="@dimen/twenty_two_dp"
+        />
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:id="@+id/feedback"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="@dimen/fifteen_dp"
+        android:textSize="@dimen/twenty_two_dp"
+        />
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:id="@+id/logout"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="@dimen/fifteen_dp"
+        android:textSize="@dimen/twenty_two_dp"
+        />
+
+</LinearLayout>

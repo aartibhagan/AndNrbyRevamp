@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndNrbyRevamp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_brands">AllBrands</string>
+    <string name="title_activity_display_brands_list">DisplayBrandsList</string>
+    <string name="title_activity_my_brands">MyBrands</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_display_product">DisplayProductActivity</string>
+    <string name="title_activity_referral">ReferralActivity</string>
+    <string name="title_activity_brand_page">BrandPageActivity</string>
+</resources>

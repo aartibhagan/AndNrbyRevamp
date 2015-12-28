@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/ten_dp"
+    android:id="@+id/parent_relative_layout_likes_and_redeems"
+    >
+
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:id="@+id/likes_counter_text_details_bottom_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/five_dp"
+        android:textSize="@dimen/sixteen_sp"
+        />
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:id="@+id/likesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/five_dp"
+        android:layout_toRightOf="@id/likes_counter_text_details_bottom_strip"
+        android:textSize="@dimen/sixteen_sp"
+        />
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:id="@+id/redeem_counter_text_details_bottom_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23"
+        android:layout_toRightOf="@id/likesText"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sixteen_sp"
+        />
+    <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redeem"
+        android:layout_toRightOf="@id/redeem_counter_text_details_bottom_strip"
+        android:layout_marginLeft="@dimen/five_dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sixteen_sp"
+        />
+
+
+
+</RelativeLayout>

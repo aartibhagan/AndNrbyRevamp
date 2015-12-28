@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ascentsmartwaves.andnrbyrevamp.activities.BrandPageActivity">
+
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_brands"
+            >
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/five_dp"
+                >
+
+                <include
+                    android:id="@+id/header_brandPage"
+                    layout="@layout/brand_page_header"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    />
+
+                <include
+                    android:id="@+id/Footer_brandPage"
+                    layout="@layout/brand_page_footer"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@id/header_brandPage"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+        <com.ascentsmartwaves.andnrbyrevamp.custom.CircleImage
+            android:id="@+id/walletfloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:elevation="@dimen/five_dp"
+            android:onClick="openAnimation"
+            android:background="@drawable/fab"
+            android:layout_margin="@dimen/fifteen_dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/showMenu"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:background="#CC000000">
+
+            <LinearLayout
+                android:id="@+id/mylikeslayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_above="@+id/dealwalletlayout"
+                android:gravity="right">
+
+                <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MY LIKES"
+                    android:textColor="@color/white"
+                    android:clickable="true"
+                    android:onClick="Bookmarks"
+                    android:padding="@dimen/five_dp"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bookmarks"
+                    android:padding="@dimen/five_dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="Bookmarks"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dealwalletlayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mybrandslayout"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:gravity="right">
+
+                <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEALS WALLET"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/five_dp"
+                    android:clickable="true"
+                    android:onClick="DealsWallet"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dealswallet"
+                    android:padding="@dimen/five_dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="DealsWallet"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mybrandslayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_above="@+id/allbrandslayout"
+                android:gravity="right">
+
+                <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MY BRANDS"
+                    android:textColor="#FFF"
+                    android:padding="@dimen/five_dp"
+                    android:clickable="true"
+                    android:onClick="MyBrands"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:layout_gravity="center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mybrands"
+                    android:padding="@dimen/five_dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="MyBrands"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/allbrandslayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginBottom="@dimen/hundred_dp"
+                android:layout_alignParentBottom="true">
+
+                <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALL BRANDS"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/five_dp"
+                    android:clickable="true"
+                    android:onClick="AllBrands"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/allbrands"
+                    android:padding="@dimen/five_dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="AllBrands"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/homelayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_above="@+id/mylikeslayout"
+                android:gravity="right">
+
+                <com.ascentsmartwaves.andnrbyrevamp.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:textColor="#FFF"
+                    android:clickable="true"
+                    android:onClick="Home"
+                    android:padding="@dimen/five_dp"
+                    android:textSize="@dimen/fifteen_dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home"
+                    android:padding="@dimen/five_dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="Home"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    />
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
